@@ -43,12 +43,13 @@ import boardmemberhermas from '../assets/pictures/individual/hermas.jpg'
 import boardmemberasakiso from '../assets/pictures/individual/asakiso.jpg'
 import boardmember2_blankavator from '../assets/icons/Blank-Avatar-Man-in-Suit.jpg'
 import boardmembergodwin from '../assets/pictures/individual/red_Ambassador.jpg'
+import MissionVisionValues from './cards/MissionVisionValues'
 
 function OurClub() {
   return (
     <div>
       <NavBar />
-
+      <MissionVisionValues />
       <div className='container-fluid mt-0 mb-0 py-0 bg-light'>
         <div className='row mx-1 me-1'>
           <div className='col bg-success text-light fw-bold p-5 border-rounded'>
@@ -92,7 +93,6 @@ function OurClub() {
           </div>
         </div>
       </div>
-
       <hr className='mb-1 mt-0' />
       <div className='d-flex justify-content-center bg-light text-danger mt-0 py-1 mb-0'>
         OUR CORE VAULES
@@ -251,11 +251,9 @@ function OurClub() {
           </div>
         </div>
       </div>
-
       <div className='d-flex justify-content-center bg-light text-danger  mb-0  py-5 px-5'>
         BOARD OF DIRECTORS | TECHNICAL STAFF | COACHING STAFF
       </div>
-
       <>
         <div className='container-fluid'>
           <h1 className=' d-flex justify-content-center bg-light text-danger mb-0 py-0'>

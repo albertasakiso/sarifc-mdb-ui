@@ -20,9 +20,8 @@ function Carousel() {
         <MDBCarouselItem className='active'>
           <MDBCarouselElement src={slider1} alt='slider1 image' />
           <MDBCarouselCaption>
-            <h5 className='fs-3'>First slide label</h5>
             <p className='btn btn-success'>
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
+              PICTURES OF SARI FC HALFTIME TEAM TALK VS ARROW HEAD
             </p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
@@ -30,9 +29,8 @@ function Carousel() {
         <MDBCarouselItem>
           <MDBCarouselElement src={slider2} alt='slider2 image' />
           <MDBCarouselCaption>
-            <h5 className='fs-3'>Second slide label</h5>
             <p className='btn btn-success'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              PICTURES OF SARI FC HALFTIME TEAM TALK VS ARROW HEAD
             </p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
@@ -40,9 +38,8 @@ function Carousel() {
         <MDBCarouselItem>
           <MDBCarouselElement src={slider3} alt='slider3 image' />
           <MDBCarouselCaption>
-            <h5 className='fs-3'>Third slide label</h5>
             <p className='btn btn-success'>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              PICTURES OF SARI FC HALFTIME TEAM TALK VS ARROW HEAD
             </p>
           </MDBCarouselCaption>
         </MDBCarouselItem>

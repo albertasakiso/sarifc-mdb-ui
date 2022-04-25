@@ -1,0 +1,88 @@
+table {
+  border: 0.3rem solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0.2rem 0.2rem 1rem #000;
+  margin: 0 auto;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+caption {
+  font-size: 1rem;
+  color: rgb(152, 228, 11);
+  text-shadow: 0.1rem 0.1rem 0.3rem #000;
+  padding: 1rem 0 1rem;
+  font-weight: bold;
+}
+
+tbody {
+  text-align: center;
+  border-bottom: 0.3rem solid rgb(255, 0, 0);
+  border-top: 0.3rem solid rgb(255, 0, 0);
+}
+
+tfoot th,
+tfoot td {
+  font-size: 1rem;
+  padding: 0 1rem;
+  line-height: 2;
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgb(255, 0, 0);
+  border-top: 0.1rem solid rgb(255, 0, 0);
+  overflow: hidden;
+}
+
+tbody tr th {
+  text-align: left;
+}
+
+tbody > :nth-child(1) {
+  background-color: #00b118;
+}
+tbody > :nth-child(2) {
+  background-color: #004cff;
+}
+tbody > :nth-child(3) {
+  background-color: #004cff;
+}
+tbody > :nth-child(4) {
+  background-color: #004cff;
+}
+
+tbody > :nth-child(5),
+tbody > :nth-child(6) {
+  background-color: #004cff;
+}
+
+tbody > :nth-child(7) {
+  background-color: #004cff;
+}
+
+tbody > :nth-child(8) {
+  background-color: #004cff;
+}
+
+tbody > :nth-child(9) {
+  background-color: #ff2d2d;
+}
+
+thead,
+tfoot tr :last-child {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), #333 50%, #111);
+  color: #ffffff;
+}
+
+tfoot > tr:nth-child(1) :first-child {
+  background-color: #00b118;
+}
+
+tfoot > tr:nth-child(2) :first-child {
+  background-color: #ff2d2d;
+}

@@ -1,0 +1,99 @@
+.fixcard {
+  width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  background: #ffffff;
+}
+
+.fixcard-active {
+  color: copy;
+}
+
+.fixvs-active {
+  color: rgb(0, 2, 0);
+}
+
+.fixvs-inactive {
+  color: rgb(255, 0, 0);
+}
+
+.fixvs-future {
+  color: rgb(255, 0, 0);
+}
+
+.fixteams {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.fixteams > p {
+  margin-bottom: 0;
+}
+.fixscores {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  text-align: center;
+  font-size: 45px;
+  margin: 0;
+}
+
+.fixscores > h1 {
+  margin: 10px;
+}
+
+.fixscores > img {
+  display: block;
+  margin: auto;
+}
+
+.fixvs {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixlocations {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  text-align: center;
+  font-weight: lighter;
+  font-style: initial;
+  padding-bottom: 10px;
+  color: rgb(56, 42, 255);
+}
+
+.fixcard-footer {
+  font-size: 20px;
+  position: static;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 0.5em 1em;
+  color: #b80a0a;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  background: rgb(255, 255, 255);
+}
+
+.fixcard-footer-inactive {
+  background: rgb(255, 255, 255);
+}
+
+.fixcard-footer-active {
+  background: rgb(255, 49, 49);
+}
+
+.fixcard-footer-future {
+  background: rgb(255, 0, 0);
+}
+
+.fixfloat-right {
+  float: right;
+}
+
+.fixauthor * {
+  color: white;
+}

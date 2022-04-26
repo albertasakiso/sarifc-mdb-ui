@@ -50,54 +50,13 @@ function OurClub() {
     <div>
       <NavBar />
       <MissionVisionValues />
-      <div className='container-fluid mt-0 mb-0 py-0 bg-light'>
-        <div className='row mx-1 me-1'>
-          <div className='col bg-success text-light fw-bold p-5 border-rounded'>
-            <div className='row d-flex justify-content-center mx-1 me-1'>
-              <h4 className='col border img-center text-center p-5 fw-bolder'>
-                <img src={visionicon} height={120} alt='vision' />
-                Vision
-              </h4>
-              <p className='col'>
-                To be the best football club in Ghana, both on and off the
-                pitch. To become the District’s leading football club that
-                changes lives.
-              </p>
-            </div>
-          </div>
 
-          <div className='col'>
-            <div className='row d-flex justify-content-center  bg-primary text-light fw-bold p-5 border-rounded'>
-              <h4 className='col border img-center text-center p-5 fw-bolder mx-1 me-1'>
-                <img src={visionicon} height={120} alt='vision' />
-                Mission
-              </h4>
-              <p className='col d-flex justify-content-start'>
-                To bring together the Sari F.C family to create life changing
-                opportunities for children and young people in Tolon District
-                and beyond.
-              </p>
-            </div>
-          </div>
-          <div className='col'>
-            <div className='row d-flex justify-content-center  bg-danger text-light fw-bold p-5 border-rounded'>
-              <h4 className='col img-center text-center border p-5 fw-bolder mx-1 me-1'>
-                <img src={visionicon} height={120} alt='vision' />
-                Values{' '}
-              </h4>
-              <p className='col d-flex justify-content-start'>
-                Respect, effort, ambition, teamwork and humility are the five
-                principal values that define the spirit of Sari Football Club
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
       <hr className='mb-1 mt-0' />
-      <div className='d-flex justify-content-center bg-light text-danger mt-0 py-1 mb-0'>
-        OUR CORE VAULES
-      </div>
+
       <div className='container mt-0 mb-2 px-3 pb-3 bg-light'>
+        <div className='d-flex justify-content-center bg-light text-danger mt-0 py-1 mb-0'>
+          OUR CORE VAULES
+        </div>
         <div className='row mx-1 me-1'>
           <div className='col bg-light text-primary fw-bold p-3 border-rounded'>
             <div className='row d-flex justify-content-center '>
@@ -251,15 +210,16 @@ function OurClub() {
           </div>
         </div>
       </div>
-      <div className='d-flex justify-content-center bg-light text-danger  mb-0  py-5 px-5'>
+      {/* <div className='d-flex justify-content-center bg-light text-danger  mb-4  py-5 px-5'>
         BOARD OF DIRECTORS | TECHNICAL STAFF | COACHING STAFF
-      </div>
+      </div> */}
       <>
         <div className='container-fluid'>
           <h1 className=' d-flex justify-content-center bg-light text-danger mb-0 py-0'>
             BOARD OF DIRECTORS
           </h1>
-          <hr className=' my-0 mb-1' />
+          <hr className=' my-0 mb-0' />
+
           <div className='container-fluid bg-light  d-flex justify-content-start'>
             <MDBRow className='text-dark mt-4 mx-4 mb-4 d-flex justify-content-start'>
               <MDBCol className='shadow mt-4 mx-4 mb-4'>
@@ -354,103 +314,86 @@ function OurClub() {
         </div>
       </>
       <div>
-        <hr />
+        {/* <hr />
         <div className='container-fluid'>
           <h1 className=' d-flex justify-content-center bg-light text-danger mb-0 py-0'>
             COACHING STAFF
           </h1>
           <hr className=' my-0 mb-0' />
+        </div> */}
+
+        <div className='container-fluid bg-light text-primary mt-1 py-1'>
+          <div className='container-fluid'>
+            <h1 className=' d-flex justify-content-center bg-light text-danger mb-0 py-0'>
+              COACHING STAFF
+            </h1>
+            <hr className=' my-1 mb-3 ' />
+          </div>
+          <table className='table mb-0 shadow-none'>
+            <tbody className='bg-light'>
+              <tr className='bg-light'>
+                <td>
+                  <div className='d-flex align-content-center'>
+                    <img
+                      src={boardmembergodwin}
+                      alt
+                      style={{ width: 145, height: 145 }}
+                      className='rounded-circle'
+                    />
+                    <div className='ms-3'>
+                      <p className='fw-bold fs-2 mb-1'>GODWIN ANAFO APULLAH</p>
+                      <p className='text-muted mb-0'>gapullah@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p className='fw-bold fs-4 mb-1'>HEAD COACH</p>
+                  <p className='text-muted mb-0'>Division Three</p>
+                </td>
+              </tr>
+              <tr className='bg-light'>
+                <td>
+                  <div className='d-flex align-content-center'>
+                    <img
+                      src={boardmember2_blankavator}
+                      className='rounded-circle'
+                      alt
+                      style={{ width: 145, height: 145 }}
+                    />
+                    <div className='ms-3'>
+                      <p className='fw-bold fs-2 mb-1'>ABDULAI</p>
+                      <p className='text-muted mb-0'>abdulai@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p className='fw-normal fs-4 mb-1'>ASSISTANT COACH</p>
+                  <p className='text-muted mb-0'>Division Three</p>
+                </td>
+              </tr>
+              <tr className='bg-light'>
+                <td>
+                  <div className='d-flex align-content-center'>
+                    <img
+                      src={boardmember2_blankavator}
+                      className='rounded-circle'
+                      alt
+                      style={{ width: 145, height: 145 }}
+                    />
+                    <div className='ms-3'>
+                      <p className='fw-bold fs-2 mb-1'>HABIB BASHIRU</p>
+                      <p className='text-muted mb-0'>habibbashiru@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p className='fw-normal  fs-4 mb-1'>COACH</p>
+                  <p className='text-muted mb-0'>U-13</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <section>
-          <div
-            className='jumbotron p-5 text-center text-md-left author-box wow fadeIn bg-light text-dark'
-            data-wow-delay='0.3s'
-          >
-            {/*Name*/}
-
-            <hr />
-            <div className='row'>
-              {/*Avatar*/}
-              <div className='col-12 col-md-2 mb-md-0 mb-4'>
-                <img
-                  src={boardmembergodwin}
-                  className='img-fluid rounded z-depth-2'
-                />
-              </div>
-              {/*Author Data*/}
-              <div className='col-12 col-md-10 d-flex justify-content-start'>
-                <h5 className='font-weight-bold dark-grey-text mb-3'>
-                  <strong>GODWIN A. APULLAH</strong>
-                </h5>
-                <br />
-                <h5 className='font-weight-normal dark-grey-text mb-3'>
-                  <div> : HEAD COACH DIVISION THREE</div>
-                </h5>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/*/.Author box*/}
-        <section>
-          <div
-            className='jumbotron p-5 text-center text-md-left author-box wow fadeIn bg-light text-dark'
-            data-wow-delay='0.3s'
-          >
-            {/*Name*/}
-
-            <hr />
-            <div className='row'>
-              {/*Avatar*/}
-              <div className='col-12 col-md-2 mb-md-0 mb-4'>
-                <img
-                  src={boardmember2_blankavator}
-                  className='img-fluid rounded z-depth-2'
-                />
-              </div>
-              {/*Author Data*/}
-              <div className='col-12 col-md-10 d-flex justify-content-start'>
-                <h5 className='font-weight-bold dark-grey-text mb-3'>
-                  <strong>ABDULAI</strong>
-                </h5>
-                <br />
-                <h5 className='font-weight-normal dark-grey-text mb-3'>
-                  <div> : ASSISTANT COACH DIVISION THREE</div>
-                </h5>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/*/.Author box*/}
-        <section>
-          <div
-            className='jumbotron p-5 text-center text-md-left author-box wow fadeIn bg-light text-dark'
-            data-wow-delay='0.3s'
-          >
-            {/*Name*/}
-
-            <hr />
-            <div className='row'>
-              {/*Avatar*/}
-              <div className='col-12 col-md-2 mb-md-0 mb-4'>
-                <img
-                  src={boardmember2_blankavator}
-                  className='img-fluid rounded z-depth-2'
-                />
-              </div>
-              {/*Author Data*/}
-              <div className='col-12 col-md-10 d-flex justify-content-start'>
-                <h5 className='font-weight-bold dark-grey-text mb-3'>
-                  <strong> HABIB BASHIRU</strong>
-                </h5>
-                <br />
-                <h5 className='font-weight-normal dark-grey-text mb-3'>
-                  <div> : COACH JUVENILE U-13</div>
-                </h5>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/*/.Author box*/}
       </div>
       <Footer />
     </div>

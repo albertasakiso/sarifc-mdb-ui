@@ -3,7 +3,7 @@ import React from 'react'
 function MissionVisionValues() {
   return (
     <div>
-      <div class='container-fluid my-5 bg-light text-dark'>
+      <div class='container-fluid my-0 bg-light text-dark'>
         {/*Section: Content*/}
         <section className='text-center pb-2 mb-4 mt-4 pt-4'>
           {/* Grid row */}

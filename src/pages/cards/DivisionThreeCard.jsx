@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit'
+import {
+  MDBBtn,
+  MDBIcon,
+  MDBModal,
+  MDBModalDialog,
+  MDBModalContent,
+  MDBModalHeader,
+  MDBModalTitle,
+  MDBModalBody,
+  MDBModalFooter,
+  MDBBadge,
+} from 'mdb-react-ui-kit'
 
 import newscard1 from '../../assets/pictures/individual/red_Ambassador.jpg'
 import newscard2 from '../../assets/pictures/individual/player_Iven1.jpg'
 import newscard3 from '../../assets/pictures/individual/player_defender1.jpg'
 
 function DivisionThreeCard() {
+  const [scrollableModal, setScrollableModal] = useState(false)
+
+  const [centredModal, setCentredModal] = useState(false)
+
+  const toggleShow = () => setCentredModal(!centredModal)
+
   return (
     <>
       <div>
@@ -34,14 +51,7 @@ function DivisionThreeCard() {
                     FORWARD
                   </p>
                   <p className='fw-bold h1 mb-1'>APILIGU ASAKISO</p>
-                  <span>
-                    <MDBIcon outline floating color='warning'>
-                      <p className='text-muted'>NxGen Rating </p>
-                      <MDBIcon fas icon='star' /> <MDBIcon fas icon='star' />{' '}
-                      <MDBIcon fas icon='star' /> <MDBIcon fas icon='star' />{' '}
-                      <MDBIcon fas icon='star' />{' '}
-                    </MDBIcon>
-                  </span>
+
                   <p className='text-muted mb-0'>18</p>
                 </div>
                 <hr style={{ backgroundColor: 'hsl(0, 0%, 75%)' }} />
@@ -49,7 +59,12 @@ function DivisionThreeCard() {
                   <span>
                     {/* <i className='fas fa-bed me-2 text-muted' /> */}
                     <strong className='me-1'>
-                      <MDBBtn>APP</MDBBtn>
+                      <MDBBtn>
+                        APP
+                        <MDBBadge className='ms-2' color='danger'>
+                          9
+                        </MDBBadge>
+                      </MDBBtn>
                     </strong>
                     <span className='text-muted'>
                       <MDBBtn
@@ -63,7 +78,16 @@ function DivisionThreeCard() {
                       </MDBBtn>
                     </span>
                     <strong className='me-1'>
-                      <MDBBtn>Goals</MDBBtn>
+                      <MDBBtn>
+                        Goals
+                        <MDBBadge
+                          pill
+                          className='mx-2 text-bold'
+                          color='danger'
+                        >
+                          9
+                        </MDBBadge>
+                      </MDBBtn>
                     </strong>
                     <span className='text-muted'>
                       <MDBBtn
@@ -75,17 +99,6 @@ function DivisionThreeCard() {
                       >
                         41
                       </MDBBtn>
-                    </span>
-                  </span>
-                  <span>
-                    {/* <i className='fas fa-bath me-2 text-muted' /> */}
-                    <strong className='me-1'> NxGen Rating</strong>
-                    <span className='text-muted'>
-                      <MDBIcon outline floating color='warning'>
-                        <MDBIcon fas icon='star' /> <MDBIcon fas icon='star' />{' '}
-                        <MDBIcon fas icon='star' /> <MDBIcon fas icon='star' />{' '}
-                        <MDBIcon fas icon='star' />{' '}
-                      </MDBIcon>
                     </span>
                   </span>
                 </div>
@@ -113,32 +126,76 @@ function DivisionThreeCard() {
                   <div className='d-flex align-items-center'>
                     <div className='flex-grow-1 ms-3'>
                       <p className='fw-bold mb-1'>Biography</p>
-                      <span className='text-muted mb-0 text-center'>
-                        Born in Laval (Mayenne, France) on 18 June 1989,
-                        Pierre-Emerick Aubameyang has triple nationality:
-                        Spanish, French and Gabonese, but plays internationally
-                        for Gabon. The striker has experience of playing in
-                        several European countries. After being at several clubs
-                        as a youth, including AC Milan, Aubameyang made his
-                        senior debut in 2008/09 at Dijon in the French second
-                        division, on loan at the time from the Italian outfit.
-                        He caught the eye of a number of Ligue 1 teams, and
-                        would have spells at Lille (2009/10), AS Monaco
-                        (2010/11) and Saint Etienne (2011/13). His next port of
-                        call was Borussia Dortmund in 2013, where he spent four
-                        and a half seasons, scoring 141 goals to earn his
-                        reputation as one of the sharpest shooters in the
-                        continent, topping the Bundesliga goalscoring charts in
-                        2017 with 31 goals. In the 2018 winter transfer window,
-                        he left for Arsenal, which where he has been for the
-                        last four years. He was top goalscorer in the
-                        Premiership in 2019 with 22 goals. On an individual
-                        level, he was been named African Player of the Year in
-                        2015 and Bundesliga Player of the Year in 2016. His
-                        various team titles include the French League Cup with
-                        Saint Etienne (2013), the German Cup with Dortmund
-                        (2017) and the FA Cup with Arsenal (2020).
-                      </span>
+                      <MDBBtn onClick={toggleShow} color='info'>
+                        Biography
+                      </MDBBtn>
+
+                      <MDBModal
+                        tabIndex='-1'
+                        show={centredModal}
+                        setShow={setCentredModal}
+                      >
+                        <MDBModalDialog centered>
+                          <MDBModalContent>
+                            <MDBModalHeader>
+                              <MDBModalTitle>Biography</MDBModalTitle>
+                              <MDBBtn
+                                className='btn-close'
+                                color='none'
+                                onClick={toggleShow}
+                              ></MDBBtn>
+                            </MDBModalHeader>
+                            <MDBModalBody className='text-dark text-start'>
+                              <p>
+                                Born in Laval (Mayenne, France) on 18 June 1989,
+                                Pierre-Emerick Aubameyang has triple
+                                nationality: Spanish, French and Gabonese, but
+                                plays internationally for Gabon. The striker has
+                                experience of playing in several European
+                                countries. After being at several clubs as a
+                                youth, including AC Milan, Aubameyang made his
+                                senior debut in 2008/09 at Dijon in the French
+                                second division, on loan at the time from the
+                                Italian outfit. He caught the eye of a number of
+                                Ligue 1 teams, and would have spells at Lille
+                                (2009/10), AS Monaco (2010/11) and Saint Etienne
+                                (2011/13). His next port of call was Borussia
+                                Dortmund in 2013, where he spent four and a half
+                                seasons, scoring 141 goals to earn his
+                                reputation as one of the sharpest shooters in
+                                the continent, topping the Bundesliga
+                                goalscoring charts in 2017 with 31 goals. In the
+                                2018 winter transfer window, he left for
+                                Arsenal, which where he has been for the last
+                                four years. He was top goalscorer in the
+                                Premiership in 2019 with 22 goals. On an
+                                individual level, he was been named African
+                                Player of the Year in 2015 and Bundesliga Player
+                                of the Year in 2016. His various team titles
+                                include the French League Cup with Saint Etienne
+                                (2013), the German Cup with Dortmund (2017) and
+                                the FA Cup with Arsenal (2020).
+                              </p>
+                              <span>
+                                <MDBIcon outline floating color='warning'>
+                                  <p className='text-muted'>NxGen Rating </p>
+                                  <MDBIcon fas icon='star' />{' '}
+                                  <MDBIcon fas icon='star' />{' '}
+                                  <MDBIcon fas icon='star' />{' '}
+                                  <MDBIcon fas icon='star' />{' '}
+                                  <MDBIcon fas icon='star' />{' '}
+                                </MDBIcon>
+                              </span>
+                            </MDBModalBody>
+                            <MDBModalFooter>
+                              <MDBBtn color='danger' onClick={toggleShow}>
+                                Close
+                              </MDBBtn>
+                              {/* <MDBBtn>Save changes</MDBBtn> */}
+                            </MDBModalFooter>
+                          </MDBModalContent>
+                        </MDBModalDialog>
+                      </MDBModal>
                     </div>
                   </div>
                   {/* Facebook */}
@@ -154,7 +211,7 @@ function DivisionThreeCard() {
                     type='button'
                     className='btn-floating btn-small btn-dribbble'
                   >
-                    <i className='fab fa-dribbble' />
+                    <i className='fab fa-instagram' />
                   </a>
                 </div>
               </div>

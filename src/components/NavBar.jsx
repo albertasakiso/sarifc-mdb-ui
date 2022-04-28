@@ -28,7 +28,7 @@ function NavBar() {
       expand='lg'
       primary
       bgColor='light'
-      breakpoint='sm md lg xl'
+      breakpoint='sm md lg xl xxl'
       className='fw-bolder'
     >
       <MDBContainer fluid>

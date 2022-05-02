@@ -36,8 +36,8 @@ tfoot td {
 th,
 td {
   padding: 1rem;
-  border-bottom: 0.1rem solid rgb(255, 0, 0);
-  border-top: 0.1rem solid rgb(255, 0, 0);
+  border-bottom: 0.1rem solid rgb(255, 255, 255);
+  border-top: 0.1rem solid rgb(255, 255, 255);
   overflow: hidden;
 }
 

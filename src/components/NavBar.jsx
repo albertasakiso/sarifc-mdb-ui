@@ -32,12 +32,11 @@ function NavBar() {
       className='fw-bolder'
     >
       <MDBContainer fluid>
-        <MDBBtn color='light'>
-          <MDBNavbarBrand href='/'>
-            <img src={sarifc_logo} height='35' alt='' loading='lazy' />
-            SARI FOOTBALL CLUB
-          </MDBNavbarBrand>
-        </MDBBtn>
+        <MDBNavbarBrand href='/'>
+          <img src={sarifc_logo} height='35' alt='' loading='lazy' />
+          SARI FOOTBALL CLUB
+        </MDBNavbarBrand>
+
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
           aria-expanded='false'
@@ -121,7 +120,7 @@ function NavBar() {
               />
               <MDBBtn color='primary'>Search</MDBBtn>
             </form> */}
-          <MDBBtn
+          {/* <MDBBtn
             className='m-1'
             style={{ backgroundColor: '/3b5998' }}
             href='/'
@@ -164,7 +163,7 @@ function NavBar() {
             href='/'
           >
             <MDBIcon fab icon='whatsapp' />
-          </MDBBtn>
+          </MDBBtn> */}
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>

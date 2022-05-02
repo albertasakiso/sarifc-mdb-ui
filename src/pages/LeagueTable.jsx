@@ -10,9 +10,9 @@ function LeagueTable() {
       <NavBar />
       {/* //JuvenilePlayers */}
       <hr />
-      <div className='container d-flex justify-content-start mt-2 '>
-        <div className='row '>
-          <div className='col '>
+      <div>
+        <div className='row'>
+          <div className='col-sm-12 col-md-12 col-lg mb-2'>
             <table className={styles.table}>
               <thead className='text-warning mb-0 '>
                 Tolon Division Three League
@@ -92,7 +92,7 @@ function LeagueTable() {
                 </tr>
               </tbody>
 
-              <tfoot>
+              {/* <tfoot>
                 <tr>
                   <td></td>
                   <td colspan='6'>Promotion</td>
@@ -102,10 +102,10 @@ function LeagueTable() {
                   <td></td>
                   <td colspan='6'>Relegation Zone</td>
                 </tr>
-              </tfoot>
+              </tfoot> */}
             </table>
           </div>
-          <div className='col '>
+          <div className='col-sm-12 col-md-12 col-lg mb-2'>
             <table className={styles.table}>
               <thead className='text-warning mb-0 '>
                 Tolon Under-13 League Table
@@ -185,7 +185,7 @@ function LeagueTable() {
                 </tr>
               </tbody>
 
-              <tfoot>
+              {/* <tfoot>
                 <tr>
                   <td></td>
                   <td colspan='6'>Promotion</td>
@@ -195,7 +195,7 @@ function LeagueTable() {
                   <td></td>
                   <td colspan='6'>Relegation Zone</td>
                 </tr>
-              </tfoot>
+              </tfoot> */}
             </table>
           </div>
         </div>

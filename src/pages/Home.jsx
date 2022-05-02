@@ -32,7 +32,7 @@ import gallery3 from '../assets/pictures/IMG_20220105_174136_857.jpg'
 import gallery4 from '../assets/pictures//teampictures/corevaluesinceo1.jpg'
 import gallery5 from '../assets/pictures/IMG_20211231_163205_747.jpg'
 import gallery6 from '../assets/pictures/happy_easter.jpg'
-
+import styles from '../../src/pages/cards/FixtureCard.module.css'
 // import FixtureCard from './cards/FixtureCard'
 
 const GET_FAKEPLAYERS = gql`
@@ -69,6 +69,9 @@ function Home() {
 
   return (
     <>
+      <h1 className='mt-2 lead fw-bolder d-flex justify-content-center'>
+        LATEST NEWS
+      </h1>
       <MDBCarousel>
         <MDBCarouselInner>
           <MDBCarouselItem className='active'>

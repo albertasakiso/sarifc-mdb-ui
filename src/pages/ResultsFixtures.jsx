@@ -8,9 +8,14 @@ function ResultsFixtures() {
   return (
     <div>
       <NavBar />
+      <div>
+        <i className='far fa-calendar-alt mt-2 mb-0' /> Sari Football Club
+        Upcoming Fixtures
+      </div>
+      <FixtureCard />
       <ResultsCard />
 
-      <FixtureCard />
+      {/* <FixtureCard /> */}
       <Footer />
     </div>
   )

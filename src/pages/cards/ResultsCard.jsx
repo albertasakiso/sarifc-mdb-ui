@@ -20,8 +20,6 @@ function ResultsCard() {
   return (
     <>
       <>
-        <hr className='mx-1' />
-
         <div>
           <div className='d-flex justify-content-center'>
             <div className={styles.resultauthor}>
@@ -34,81 +32,9 @@ function ResultsCard() {
           </div>
         </div>
       </>
-      {/* first result group */}
-      {/* <div>
-        <div className={styles['resultcard-footer']}>
-          <i className='far fa-calendar-alt' /> Monday, May 2
-          <span className='mx-4 fw-bolder'>
-            <i className='far fa-clock' /> FT
-          </span>
-        </div>
-        <div className='mt-1 mx-2 me-2'>
-          <div>
-            <div className='col'>
-              <div className={styles.resultcard}>
-                <div className={styles['resultcard-content']}>
-                  <div className='fw-bolder fs-8'>
-                    <div className={styles.resultteams}>
-                      <p>4</p>
-                      <p />
-                      <p>0</p>
-                    </div>
-                  </div>
-                  <div className={styles.resultscores}>
-                    <img src={sarifc_logo} alt='sari fc' height={100} />
-                    <p className={styles['resultvs-future']}>
-                      <small className='m-0'>
-                        <i className='far fa-clock' /> FT
-                      </small>
-                    </p>
-
-                    <img src={unionwonders} alt='union wonders' height={100} />
-                  </div>
-                  <div className={styles.resultlocations}>
-                    <span>Sari Football Club</span>
-                    <span />
-                    <span>Union Wonders SC</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className='col mx-4 me-4'>
-            <div className={styles.resultcard}>
-              <div className={styles['resultcard-content']}>
-                <div className='fw-bolder fs-8'>
-                  <div className={styles.resultteams}>
-                    <p>4</p>
-                    <p />
-                    <p>0</p>
-                  </div>
-                </div>
-                <div className={styles.resultscores}>
-                  <img src={sarifc_logo} alt='sari fc' height={100} />
-                  <p className={styles['resultvs-future']}>
-                    <small className='m-0'>
-                      <i className='far fa-clock' /> FT
-                    </small>
-                  </p>
-
-                  <img src={unionwonders} alt='union wonders' height={100} />
-                </div>
-                <div className={styles.resultlocations}>
-                  <span>Sari Football Club</span>
-                  <span />
-                  <span>Union Wonders SC</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* HERE IS THE FIRST ROW AND COLUMN ITEMS FOR THE RESULT FOR VARIOUS LEAGUES */}
 
       <div className='m-0 bg-light '>
-        <div className={styles['resultcard-footer']}>
+        <div>
           <i className='far fa-calendar-alt' /> TOLON DIVISION THREE LEAGUE
           RESULTS
           <span className='mx-4 fw-bolder'>
@@ -292,7 +218,7 @@ function ResultsCard() {
       </div>
       {/* HERE IS THE FIRST ROW AND COLUMN ITEMS FOR THE RESULT FOR VARIOUS LEAGUES */}
       <div className='m-0 bg-light '>
-        <div className={styles['resultcard-footer']}>
+        <div>
           <i className='far fa-calendar-alt' /> FRIENDLY MATHCES
           <span className='mx-4 fw-bolder'>
             <i className='far fa-clock' />

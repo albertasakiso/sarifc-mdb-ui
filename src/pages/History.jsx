@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import CustomNavBar from '../components/CustomNavBar'
+
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 

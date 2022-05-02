@@ -9,7 +9,7 @@ import LeagueTable from './pages/LeagueTable'
 import History from './pages/History'
 import Honors from './pages/Honors'
 import ContactUs from './pages/ContactUs'
-import CustomNavBar from './components/CustomNavBar'
+
 import NewsItem from './pages/NewsItem'
 
 import {

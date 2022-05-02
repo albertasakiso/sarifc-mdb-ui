@@ -1,4 +1,6 @@
 table {
+  max-width: 100;
+  color: white;
   border: 0.3rem solid rgb(255, 255, 255);
   border-collapse: collapse;
   table-layout: fixed;
@@ -44,7 +46,7 @@ tbody tr th {
 }
 
 tbody > :nth-child(1) {
-  background-color: #00b118;
+  background-color: #004cff;
 }
 tbody > :nth-child(2) {
   background-color: #004cff;
@@ -70,7 +72,7 @@ tbody > :nth-child(8) {
 }
 
 tbody > :nth-child(9) {
-  background-color: #ff2d2d;
+  background-color: #004cff;
 }
 
 thead,
@@ -80,9 +82,9 @@ tfoot tr :last-child {
 }
 
 tfoot > tr:nth-child(1) :first-child {
-  background-color: #00b118;
+  background-color: #004cff;
 }
 
 tfoot > tr:nth-child(2) :first-child {
-  background-color: #ff2d2d;
+  background-color: #004cff;
 }

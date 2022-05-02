@@ -18,21 +18,9 @@ import advert2 from '../../assets/icons/asakiso_logo.jpg'
 function FixtureCard() {
   return (
     <>
-      <hr className='mx-1' />
-
       <div>
-        <div className='d-flex justify-content-center'>
-          <div className={styles.fixauthor}>
-            <p>
-              <a href='/resultsfixtures' target='_blank'>
-                Upcoming Fixtures
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div className='row bg-light pt-4'>
-          <div className=' col d-flex justify-content-center me-1 ms-2'>
+        <div className='row bg-light pt-4 d-flex justify-content-center overflow-hidden'>
+          <div className=' col-sm-12 col-md-6 col-lg me-1 ms-2'>
             <div className={styles.fixcard}>
               <div className={styles['fixcard-content']}>
                 <div className={styles.fixteams}>
@@ -63,7 +51,7 @@ function FixtureCard() {
               </div>
             </div>
           </div>
-          <div className='col d-flex justify-content-center me-1 ms-2'>
+          <div className='col-sm-12 col-md-6 col-lg me-1 ms-2'>
             <div className={styles.fixcard}>
               <div className={styles['fixcard-content']}>
                 <div className={styles.fixteams}>
@@ -94,7 +82,7 @@ function FixtureCard() {
               </div>
             </div>
           </div>
-          <div className='col d-flex justify-content-center me-1 ms-2'>
+          <div className='col-sm-12 col-md-6 col-lg me-1 ms-2'>
             <div className={styles.fixcard}>
               <div className={styles['fixcard-content']}>
                 <div className={styles.fixteams}>
@@ -125,7 +113,7 @@ function FixtureCard() {
               </div>
             </div>
           </div>
-          <div className='col d-flex justify-content-center me-1 ms-2'>
+          {/* <div className='col  me-1 ms-2'>
             <div className={styles.fixcard}>
               <div className={styles['fixcard-content']}>
                 <div className={styles.fixteams}>
@@ -156,7 +144,7 @@ function FixtureCard() {
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

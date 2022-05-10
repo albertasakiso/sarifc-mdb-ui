@@ -39,7 +39,7 @@ import visionicon from '../assets/icons/mission.png'
 import missionicon from '../assets/icons/missionstatementicon1hp.png'
 import valuesicon from '../assets/icons/circle_icon.png'
 
-import boardmemberhermas from '../assets/pictures/individual/hermas.jpg'
+import boardmemberhermas from '../assets/pictures/individual/hermas.png'
 import boardmemberasakiso from '../assets/pictures/individual/asakiso.jpg'
 import boardmember2_blankavator from '../assets/icons/Blank-Avatar-Man-in-Suit.jpg'
 import boardmembergodwin from '../assets/pictures/individual/red_Ambassador.jpg'

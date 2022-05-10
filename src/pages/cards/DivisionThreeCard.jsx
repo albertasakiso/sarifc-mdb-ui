@@ -71,12 +71,14 @@ function DivisionThreeCard() {
       {data.fakeplayers.data.map((fakeplayer) => (
         <div>
           <div className='mt-5 text-dark'>
-            <div className='row d-flex justify-content-start'>
+            <div className='row d-flex justify-content-start '>
               <div key={fakeplayer.id}>
                 {/* Card Regular */}
                 <div
-                  className='card card-cascade col'
-                  style={{ maxWidth: '18rem' }}
+                  className='card card-cascade '
+                  style={{
+                    maxWidth: 400,
+                  }}
                 >
                   {/* Card image */}
                   <div className='view view-cascade overlay'>
@@ -93,19 +95,16 @@ function DivisionThreeCard() {
                       <div className='mask rgba-white-slight' />
                     </a>
                   </div>
-                  <div
-                    className='card-body mb-0 pb-0
-                '
-                  >
-                    <p className='fw-bold text-muted small text-uppercase '>
-                      {fakeplayer.attributes.position}
-                    </p>
-                    <p className='fw-bold h1 mb-1'>
-                      {fakeplayer.attributes.name}
+                  <div className='card-body mb-0 pb-0 '>
+                    <p className='text-primary fw-bold mb-0'>
+                      {fakeplayer.attributes.number}
+                      <span className='mx-3 text-primary fw-bold  text-uppercase '>
+                        {fakeplayer.attributes.position}
+                      </span>
                     </p>
 
-                    <p className='text-muted mb-0'>
-                      {fakeplayer.attributes.number}
+                    <p className='fw-bold h3 mb-1'>
+                      {fakeplayer.attributes.name}
                     </p>
                   </div>
                   <hr style={{ backgroundColor: 'hsl(0, 0%, 75%)' }} />
@@ -160,10 +159,10 @@ function DivisionThreeCard() {
                   {/* Card content */}
                   <div className='card-body card-body-cascade text-center'>
                     <hr style={{ backgroundColor: 'hsl(0, 0%, 75%)' }} />
-                    <div className='card-body d-flex justify-content-around pt-0 pb-0 mt-0 mb-0'>
+                    <div className='card-body d-flex justify-content-around pt-0 pb-0 mt-0 mb-0 '>
                       <span>
                         {/* <i className='fas fa-bed me-2 text-muted' /> */}
-                        <strong className='me-1'>Contract Start </strong>
+                        <strong className='me-1'>Contract </strong>
                         <span className='text-muted'>
                           {fakeplayer.attributes.contractstart}
                         </span>

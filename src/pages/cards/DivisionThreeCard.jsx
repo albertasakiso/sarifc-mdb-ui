@@ -70,11 +70,14 @@ function DivisionThreeCard() {
       {/*  */}
       {data.fakeplayers.data.map((fakeplayer) => (
         <div>
-          <div className='container mt-5 text-dark'>
-            <div className='row justify-content-start'>
-              <div key={fakeplayer.id} className='col-lg-4 col-md-12 mb-4'>
+          <div className='mt-5 text-dark'>
+            <div className='row d-flex justify-content-start'>
+              <div key={fakeplayer.id}>
                 {/* Card Regular */}
-                <div className='card card-cascade'>
+                <div
+                  className='card card-cascade col'
+                  style={{ maxWidth: '18rem' }}
+                >
                   {/* Card image */}
                   <div className='view view-cascade overlay'>
                     <img
